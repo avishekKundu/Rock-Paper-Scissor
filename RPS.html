@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+    <div class="main-head">
+        <div class="head-title">
+            <h1>ROCK PAPER SCISSOR</h1>
+            <p>Choose your option : 1.ROCK, 2.PAPER, 3.SCISSOR</p>
+        </div>
+        <div class="inpt-opt-choose">
+            <label for="name">Enter name : </label> <input type="text" id="usrNme">
+            <h3>Choose :
+                <select name="choose" id="inpSel">
+                    <option value="#">Select</option>
+                    <option value="1">Rock</option>
+                    <option value="2">Paper</option>
+                    <option value="3">Scissor</option>
+                </select>
+                <button onclick="playMatch()" id="btn-play">Play</button>
+            </h3>
+        </div>
+        <h1 id="notify"></h1>
+        <h2 id="dispScore"></h2>
+    </div>
+
+    <script src="rps.js"></script>
+</body>
+
+</html>
